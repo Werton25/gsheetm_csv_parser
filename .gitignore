@@ -59,4 +59,5 @@ typings/
 
 # user
 .idea/
-/dist
+dist
+csv

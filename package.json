@@ -11,7 +11,9 @@
     "go": "npm run build && npm run start",
     "fix-opn": "shx chmod +x node_modules/opn/xdg-open"
   },
-  "dependencies": {},
+  "dependencies": {
+    "fast-csv": "^2.4.1"
+  },
   "devDependencies": {
     "@types/lodash": "^4.14.104",
     "@types/node": "^10.1.3",
