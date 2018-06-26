@@ -11,15 +11,15 @@
     "go": "npm run build && npm run start",
     "fix-opn": "shx chmod +x node_modules/opn/xdg-open"
   },
-  "dependencies": {
-    "fast-csv": "^2.4.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/lodash": "^4.14.104",
     "@types/node": "^10.1.3",
     "ts-node": "^6.0.5",
     "tslint": "^5.10.0",
     "tslint-consistent-codestyle": "^1.13.0",
-    "typescript": "^2.9.2"
+    "typescript": "^2.9.2",
+    "pretty-error": "latest",
+    "source-map-support": "^0.5.6"
   }
 }

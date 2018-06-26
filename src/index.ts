@@ -1,22 +1,15 @@
-import csv from 'fast-csv';
-import { Stream } from 'stream';
+import 'source-map-support/register';
+import prettyError from 'pretty-error';
+
+import { Reader } from './util/reader/reader.interface';
+import { CsvReader } from './util/reader/impl/csv.reader';
+
+prettyError.start();
 
 class Runner {
-    private stream: Stream;
-
-    constructor() {
-        this.stream = new Stream();
-    }
-
     run(): void {
-        const csvStream = csv.fromPath('csv/transactions.csv')
-            .on('data', Runner.data);
-
-        this.stream.pipe(csvStream);
-    }
-
-    private static data(data: string): void {
-        console.log(data);
+        const reader: Reader = new CsvReader('csv/transactions.tsv');
+        console.log(reader.read());
     }
 }
 
