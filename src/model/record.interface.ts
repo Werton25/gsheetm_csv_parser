@@ -1,4 +1,4 @@
-import { Category } from './enums/category.enum';
+import { Category } from './enums';
 
 export interface Record {
     date: Date;
