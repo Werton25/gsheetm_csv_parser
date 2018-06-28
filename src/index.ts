@@ -1,11 +1,13 @@
 import 'source-map-support/register';
 import prettyError from 'pretty-error';
 
-import { CsvReader, Reader } from './util/reader';
+import { Reader, TransactionCsvReader } from './helpers/reader';
+import { FILE_PATH } from './constants';
+import { Transaction } from './model';
 
 prettyError.start();
 
 (() => {
-    const reader: Reader = new CsvReader('csv/transactions.tsv');
+    const reader: Reader<Transaction[]> = new TransactionCsvReader(FILE_PATH);
     console.log(reader.read());
 })();

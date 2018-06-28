@@ -1,3 +1,16 @@
 export enum Category {
     NUTRITION = 'питание',
+    GIFTS = 'подарки',
+    HEALTH = 'здоровье/медицина',
+    HOUSEWARE = 'предметы быта',
+    TRANSPORT = 'транспорт',
+    ENTERTAINMENT = 'развлечения',
+    LARGE_PURCHASES = 'крупные покупки',
+    UTILITIES = 'коммунальные услуги',
+    TRIPS = 'путешеставия',
+    DEBTS = 'задолженности',
+    OTHERS = 'другое',
+    EDUCATION = 'образование',
+    SPORT = 'спорт',
+    CLOTHES = 'одежда',
 }

@@ -1,1 +1,1 @@
-export { Record } from './record.interface';
+export { Transaction } from './record.interface';
