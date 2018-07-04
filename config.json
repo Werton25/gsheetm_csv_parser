@@ -1,0 +1,6 @@
+{
+  "path": "csv/",
+  "files": [
+    "transactions.tsv"
+  ]
+}

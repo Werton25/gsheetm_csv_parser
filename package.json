@@ -11,10 +11,13 @@
     "go": "npm run build && npm run start",
     "fix-opn": "shx chmod +x node_modules/opn/xdg-open"
   },
-  "dependencies": {},
+  "dependencies": {
+    "nconf": "^0.10.0"
+  },
   "devDependencies": {
     "@types/lodash": "^4.14.104",
     "@types/node": "^10.1.3",
+    "@types/nconf": "^0.0.37",
     "ts-node": "^6.0.5",
     "tslint": "^5.10.0",
     "tslint-consistent-codestyle": "^1.13.0",
