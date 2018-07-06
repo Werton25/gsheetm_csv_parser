@@ -12,12 +12,15 @@
     "fix-opn": "shx chmod +x node_modules/opn/xdg-open"
   },
   "dependencies": {
-    "nconf": "^0.10.0"
+    "nconf": "^0.10.0",
+    "winston": "git://github.com/winstonjs/winston#master",
+    "winston-daily-rotate-file": "^3.2.0"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.104",
     "@types/node": "^10.1.3",
     "@types/nconf": "^0.0.37",
+    "@types/winston": "^2.3.9",
     "ts-node": "^6.0.5",
     "tslint": "^5.10.0",
     "tslint-consistent-codestyle": "^1.13.0",

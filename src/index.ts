@@ -4,11 +4,12 @@ import prettyError from 'pretty-error';
 import nconf from 'nconf';
 
 import { Config } from './model';
+import { log } from './helpers/logger';
 
 const config: Config = nconf.file('config.json').get();
 
 prettyError.start();
 
 (() => {
-    console.log(config);
+    log.info(JSON.stringify(config));
 })();
